@@ -21,7 +21,6 @@ import spock.lang.Ignore;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @DirtiesContext
 @Transactional
-@Ignore
 public class SpringBasedIntegrationTest {
 
 
