@@ -217,13 +217,19 @@ Configuration for testing with @DataJpaTest, @WebMvcTest, and more.
    Organizing Tests
 
 Structuring test classes and methods for readability and maintainability.
+
 Mocking vs. Real Services
+    Mocking usually required 
+    - while interacting with external resources is costly interms of the turn-around-time or network bandwidth
+    - while downstream system in under maintainance or being parallaly developed
+    - while scope of testing is minimal as unit testing / layer testing
+    
+   Cases other then above are qualifies for the integration testing or End-to-End testing. 
 
-When to use mocks and when to use real implementations.
 Handling Test Data
-
-Using fixtures, data builders, or test containers.
-
+   - Whatever the outcome of the test phase should have scope starting from test phase and ending with test phase.
+   - Usually to support above recommandation, in-memory databases or test containers are widely used.
+     
 ### 7. Conclusion
 
    Summary of Benefits
@@ -231,9 +237,6 @@ Using fixtures, data builders, or test containers.
 Concise and readable test code.
 Powerful mocking and stubbing capabilities.
 Integrated data-driven testing support.
-Q&A
-
-Open the floor for questions and discussions.
 
 ### 8. Resources and References
 
