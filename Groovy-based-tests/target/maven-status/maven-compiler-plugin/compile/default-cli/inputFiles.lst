@@ -1,0 +1,6 @@
+/Users/2000132335/Workspace/local-oidc/Groovy-based-tests/src/main/java/com/backbase/learning/groovybasedtests/GroovyBasedTestsApplication.java
+/Users/2000132335/Workspace/local-oidc/Groovy-based-tests/src/main/java/com/backbase/learning/groovybasedtests/api/UserRestController.java
+/Users/2000132335/Workspace/local-oidc/Groovy-based-tests/src/main/java/com/backbase/learning/groovybasedtests/domain/User.java
+/Users/2000132335/Workspace/local-oidc/Groovy-based-tests/src/main/java/com/backbase/learning/groovybasedtests/repository/InMemoryUserRepository.java
+/Users/2000132335/Workspace/local-oidc/Groovy-based-tests/src/main/java/com/backbase/learning/groovybasedtests/service/IUserServices.java
+/Users/2000132335/Workspace/local-oidc/Groovy-based-tests/src/main/java/com/backbase/learning/groovybasedtests/service/UserServiceImpl.java

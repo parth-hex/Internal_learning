@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.backbase.learning.groovybasedtests.api.SampleControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.099 s <<< FAILURE! -- in com.backbase.learning.groovybasedtests.api.SampleControllerTest
+com.backbase.learning.groovybasedtests.api.SampleControllerTest.one plus one equals to two [a: 1, b: 1, c: 2, #0] -- Time elapsed: 0.027 s <<< ERROR!
+java.lang.IllegalArgumentException: WebApplicationContext is required
+	at org.springframework.util.Assert.notNull(Assert.java:172)
+	at org.springframework.test.web.servlet.setup.DefaultMockMvcBuilder.<init>(DefaultMockMvcBuilder.java:52)
+	at org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppContextSetup(MockMvcBuilders.java:51)
+	at com.backbase.learning.groovybasedtests.api.SampleControllerTest.setup(SampleControllerTest.groovy:36)
+
+com.backbase.learning.groovybasedtests.api.SampleControllerTest.one plus one equals to two [a: 1, b: 2, c: 3, #1] -- Time elapsed: 0 s <<< ERROR!
+java.lang.IllegalArgumentException: WebApplicationContext is required
+	at org.springframework.util.Assert.notNull(Assert.java:172)
+	at org.springframework.test.web.servlet.setup.DefaultMockMvcBuilder.<init>(DefaultMockMvcBuilder.java:52)
+	at org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppContextSetup(MockMvcBuilders.java:51)
+	at com.backbase.learning.groovybasedtests.api.SampleControllerTest.setup(SampleControllerTest.groovy:36)
+
+com.backbase.learning.groovybasedtests.api.SampleControllerTest.should return user details with id 1 -- Time elapsed: 0 s <<< ERROR!
+java.lang.IllegalArgumentException: WebApplicationContext is required
+	at org.springframework.util.Assert.notNull(Assert.java:172)
+	at org.springframework.test.web.servlet.setup.DefaultMockMvcBuilder.<init>(DefaultMockMvcBuilder.java:52)
+	at org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppContextSetup(MockMvcBuilders.java:51)
+	at com.backbase.learning.groovybasedtests.api.SampleControllerTest.setup(SampleControllerTest.groovy:36)
+

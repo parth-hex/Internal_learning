@@ -1,0 +1,6 @@
+com/backbase/learning/groovybasedtests/repository/InMemoryUserRepository.class
+com/backbase/learning/groovybasedtests/domain/User.class
+com/backbase/learning/groovybasedtests/service/IUserServices.class
+com/backbase/learning/groovybasedtests/service/UserServiceImpl.class
+com/backbase/learning/groovybasedtests/api/UserRestController.class
+com/backbase/learning/groovybasedtests/GroovyBasedTestsApplication.class
