@@ -100,6 +100,7 @@ Add Spock and Groovy dependencies to your pom.xml.
             </plugin>
 
 Spock configuration in src/test/resources or as part of Spring Boot test configuration.
+Be Mindful about keeping the groovy tests under the directory src/test/groovy , usually we are keeping tests under src/test/java.
 
 ### 4. Writing Integration Tests with Spock
 
