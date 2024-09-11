@@ -16,4 +16,6 @@ public interface IUserServices {
     public void deleteUser(Long id);
 
     Long createUser(User user);
+
+    User getUserByMailAddress(String mailAddress);
 }

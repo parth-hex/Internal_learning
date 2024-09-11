@@ -26,4 +26,9 @@ public class User {
 
     private String email;
 
+    public User(String fName, String lName, String email) {
+        this.fName = fName;
+        this.lName = lName;
+        this.email = email;
+    }
 }

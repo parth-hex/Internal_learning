@@ -31,6 +31,11 @@ public class UserRestController {
         return ResponseEntity.ok(userServices.getUserById(id));
     }
 
+    @GetMapping("/byAttribute")
+    public ResponseEntity<?> getUserByMailAddress(@RequestParam("email") String mail) {
+        return ResponseEntity.ok(userServices.getUserByMailAddress(mail));
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<?> updateUser(@PathVariable("id") Long id, @RequestBody User user) {
         return ResponseEntity.ok(userServices.updateUser(id, user));

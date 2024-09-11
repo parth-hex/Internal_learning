@@ -1,13 +1,15 @@
 package com.backbase.learning.groovybasedtests.service;
 
 import com.backbase.learning.groovybasedtests.domain.User;
+import com.backbase.learning.groovybasedtests.exceptions.UserNotFoundException;
 import com.backbase.learning.groovybasedtests.repository.InMemoryUserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
-public class UserServiceImpl implements IUserServices{
+public class UserServiceImpl implements IUserServices {
 
     InMemoryUserRepository userRepository;
 
@@ -23,7 +25,10 @@ public class UserServiceImpl implements IUserServices{
 
     @Override
     public User getUserById(Long id) {
-        return userRepository.findUserById(id).get();
+        Optional<User> userById = userRepository.findUserById(id);
+        if (userById.isPresent())
+            return userById.get();
+        throw new UserNotFoundException("User with id doesn't exist");
     }
 
     @Override
@@ -46,5 +51,15 @@ public class UserServiceImpl implements IUserServices{
     @Override
     public Long createUser(User user) {
         return userRepository.save(user).getId();
+    }
+
+    @Override
+    public User getUserByMailAddress(String mailAddress) {
+        Optional<User> userByEmail = userRepository.findUserByEmail(mailAddress);
+         if(userByEmail.isPresent())
+             return userByEmail.get();
+
+    throw new UserNotFoundException("User with id doesn't exist");
+
     }
 }
