@@ -1,0 +1,38 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "debit",
+          "value": "\"debitCard\""
+        },
+        {
+          "label": "credit",
+          "value": "\"creditCard\""
+        }
+      ],
+      "label": "Payment Method Selection",
+      "type": "radio",
+      "layout": {
+        "row": "Row_1mlylvo",
+        "columns": null
+      },
+      "id": "Field_1sbm1ej",
+      "key": "payment_selection",
+      "description": "Payment though Debit card",
+      "validate": {
+        "required": true
+      },
+      "properties": {}
+    }
+  ],
+  "type": "default",
+  "id": "Form_0kra1lc",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.5.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.27.0"
+  },
+  "schemaVersion": 16
+}
